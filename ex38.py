@@ -5,7 +5,7 @@ print "Wait there are not 10 things in that list. Let's dix that."
 stuff = ten_things.split()
 more_stuff = ["Day", "Night", "Song", "Frisbee", "Corn", "Banana", "Girl", "Boy"]
 
-while len(stuff) != 10:
+for i in range(0, 10-(len(stuff))):
     next_one = more_stuff.pop()
     print "Addding: ", next_one
     stuff.append(next_one)
